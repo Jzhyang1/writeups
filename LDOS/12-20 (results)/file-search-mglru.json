@@ -1,0 +1,44 @@
+[
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "baseline_test",
+            "benchmark": "filesearch",
+            "iteration": 1
+        },
+        "results": {
+            "runtime_sec": 626.1088273525238
+        }
+    },
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "baseline_test",
+            "benchmark": "filesearch",
+            "iteration": 2
+        },
+        "results": {
+            "runtime_sec": 579.4946792125702
+        }
+    },
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "baseline_test",
+            "benchmark": "filesearch",
+            "iteration": 3
+        },
+        "results": {
+            "runtime_sec": 660.3707830905914
+        }
+    }
+]

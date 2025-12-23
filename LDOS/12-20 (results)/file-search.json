@@ -1,0 +1,86 @@
+[
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "baseline_test",
+            "benchmark": "filesearch",
+            "iteration": 1
+        },
+        "results": {
+            "runtime_sec": 679.5740230083466
+        }
+    },
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "baseline_test",
+            "benchmark": "filesearch",
+            "iteration": 2
+        },
+        "results": {
+            "runtime_sec": 700.9776451587677
+        }
+    },
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "baseline_test",
+            "benchmark": "filesearch",
+            "iteration": 3
+        },
+        "results": {
+            "runtime_sec": 716.0719804763794
+        }
+    },
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "cache_ext_test",
+            "benchmark": "filesearch",
+            "iteration": 1
+        },
+        "results": {
+            "runtime_sec": 373.9457468986511
+        }
+    },
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "cache_ext_test",
+            "benchmark": "filesearch",
+            "iteration": 2
+        },
+        "results": {
+            "runtime_sec": 433.0133867263794
+        }
+    },
+    {
+        "config": {
+            "name": "filesearch_benchmark",
+            "cpus": 8,
+            "passes": 10,
+            "cgroup_size": 1073741824,
+            "cgroup_name": "cache_ext_test",
+            "benchmark": "filesearch",
+            "iteration": 3
+        },
+        "results": {
+            "runtime_sec": 333.554936170578
+        }
+    }
+]

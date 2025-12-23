@@ -4,7 +4,7 @@
 * Get eviction working on cloudlab
 
 Download & boot
-```
+```bash
 git clone https://github.com/cache-ext/cache_ext.git
 cd cache_ext
 git submodule update --init --recursive
@@ -16,12 +16,12 @@ sudo grub-reboot 'Advanced options for Ubuntu>Ubuntu, with Linux 6.6.8-cache-ext
 sudo reboot now
 ```
 Check system 
-```
+```bash
 # Make sure it isn't generic
 uname -r
 ```
 Extra storage
-```
+```bash
 sudo mkdir /data  
 sudo /usr/local/etc/emulab/mkextrafs.pl -f /data  
 # It may give some warnings, just say yes
@@ -30,14 +30,14 @@ sudo cp cache_ext /data -r
 cd /data/cache_ext
 ```
 Install benchmarks
-```
+```bash
 # Required
 ./install_misc.sh
 sudo ./setup_isolation.sh
 sudo ./build_policies.sh
 ```
 choose whichever ones are needed
-```
+```bash
 # Benchmarks
 
 sudo apt install clang-14  # needed for filesearch
@@ -49,12 +49,12 @@ sudo ./install_ycsb.sh     # NoSQL
 sudo ./install_leveldb.sh  # KV store
 ```
 Run benchmarks
-```
+```bash
 cd /data/cache_ext/eval/<benchmark name>
 sudo ./run.sh
 ```
 View results
-```
+```bash
 cat /data/cache_ext/results/<benchmark name>.json
 ```
 
@@ -62,7 +62,7 @@ cat /data/cache_ext/results/<benchmark name>.json
 Successfully run existing benchmark
 
 Example results for file search
-```
+```json
 [
     {
         "config": {
@@ -155,7 +155,7 @@ Trying to run custom policy
 
 It looks like all that needs to be done is to make a `cache_ext_<policyname>.{bpf.c,.c}` file and call `make` to get the `.out` file. Then run 
 
-```
+```bash
 python3 "$BENCH_PATH/bench_<workload>.py" \
 	--cpu 8 \
 	--policy-loader "$POLICY_PATH/cache_ext_<policyname>.out" \
